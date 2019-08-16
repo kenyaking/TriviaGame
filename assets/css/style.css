@@ -11,3 +11,38 @@ body {
     text-align: center;
     padding: 5% 0;
 }
+
+.content_start {
+    text-align: center;
+    padding-bottom: 5%;
+    display: inherit;
+}
+.content button {
+    width: 250px;
+    height: 90px;
+    background: pink;
+    font-size: large;
+    font-weight: bold;
+}
+.content button:hover {
+    background: lightblue;
+}
+
+.content_main {
+    text-align: center;
+    display: none;
+}
+.row-item {
+    padding: 1% 0;
+}
+.content_main input {
+    margin-left: 10px;
+}
+input[type="radio"] {
+    cursor: pointer;
+}
+.content_end {
+    text-align: center;
+    padding: 3% 0;
+    display: none;
+}
