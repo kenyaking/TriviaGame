@@ -39,3 +39,24 @@ function check_answers() {
     } else {
         unanswered += 1;
     }
+    if ($('#question2_answer1').prop('checked') || $('#question2_answer2').prop('checked')) {
+        let answer2 = $('#question2_answer1').prop('checked');
+        if (answer2 === correct_answer2) corrections += 1;
+        else incorrections += 1;
+    } else {
+        unanswered += 1;
+    }
+    if ($('#question3_answer1').prop('checked') || $('#question3_answer2').prop('checked')) {
+        let answer3 = $('#question3_answer1').prop('checked');
+        if (answer3 === correct_answer3) corrections += 1;
+        else incorrections += 1;
+    } else {
+        unanswered += 1;
+    }
+    if ($('#question4_answer1').prop('checked') || $('#question4_answer2').prop('checked')) {
+        let answer4 = $('#question4_answer1').prop('checked');
+        if (answer4 === correct_answer4) corrections += 1;
+        else incorrections += 1;
+    } else {
+        unanswered += 1
+    }
