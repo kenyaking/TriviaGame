@@ -1,0 +1,13 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+}
+.content {
+    margin: 3% 0;
+    padding: 3%;
+    background: yellow;
+}
+.content>h1 {
+    text-align: center;
+    padding: 5% 0;
+}
