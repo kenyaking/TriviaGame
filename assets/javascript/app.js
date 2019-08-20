@@ -60,3 +60,25 @@ function check_answers() {
     } else {
         unanswered += 1
     }
+
+    if ($('#question5_answer1').prop('checked') || $('#question5_answer2').prop('checked')) {
+        let answer5 = $('#question5_answer1').prop('checked');
+        if (answer5 === correct_answer5) corrections += 1;
+        else incorrections += 1;
+    } else {
+        unanswered += 1;
+    }
+    if ($('#question6_answer1').prop('checked') || $('#question6_answer2').prop('checked')) {
+        let answer6 = $('#question6_answer1').prop('checked');
+        if (answer6 === correct_answer6) corrections += 1;
+        else incorrections += 1;
+    } else {
+        unanswered += 1;
+    }
+    $('#correct_answers').html(corrections);
+    $('#wrong_answers').html(incorrections);
+    $('#not_answers').html(unanswered);
+    setTimeout(function () {
+
+    }, 100);
+}
